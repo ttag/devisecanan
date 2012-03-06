@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
+
+<%=logger.debug("The URL" + request.env['REQUEST_URI'] )%>  
+
+<div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>

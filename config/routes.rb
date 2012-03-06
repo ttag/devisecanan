@@ -1,4 +1,8 @@
 Devisecancan::Application.routes.draw do
+  resources :cities do as_routes end
+
+  resources :posts
+
   resources :roles
 
   devise_for :users

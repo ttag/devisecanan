@@ -12,7 +12,7 @@ include CanCan::Ability
     elsif user.role? :operator
       can :manage, Post
     else 
-      can :read, :all
+      can :manage, :all
     end
   end
 end
